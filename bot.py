@@ -2,9 +2,6 @@ import time
 import telebot
 import requests
 
-api = requests.get(url='https://blockchain.info/tobtc?currency=USD&value=1')
-dd = api.json()
-xx = 1/dd
 
 TOKEN = "your telegram bot token obtained from BotFather"
 bot = telebot.TeleBot(token=TOKEN)
@@ -22,6 +19,9 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['btc']) # help message handler
 def send_welcome(message):
+    api = requests.get(url='https://blockchain.info/tobtc?currency=USD&value=1')
+    dd = api.json()
+    xx = 1/dd
     bot.reply_to(message, xx)
 
 @bot.message_handler(func=lambda msg: msg.text is not None and '@' in msg.text)
