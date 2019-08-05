@@ -1,4 +1,4 @@
-# TelegramBot-currentvalue-BTC
+# TelegramBot-Currentvalue-Cryptocurrency
 telgram bot that tells the current value of different cryptocurrencies
 
 /start for help
