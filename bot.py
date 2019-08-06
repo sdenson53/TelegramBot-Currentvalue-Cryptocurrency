@@ -35,7 +35,8 @@ def send_welcome(message):
 def send_welcome(message):
     a = str(cg.get_price(ids='litecoin', vs_currencies='usd'))
     b = '$' + a[21:27]
-    bot.reply_to(message, b)
+    c = b.replace('}','')  # to remove '}' in case the value falls down below $100 a '}' symbol will appear due to format of pycoingecko
+    bot.reply_to(message, c)
 
 
 @bot.message_handler(commands=['xrp'])  # ripple
