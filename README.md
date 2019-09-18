@@ -1,4 +1,11 @@
 # TelegramBot-Currentvalue-Cryptocurrency
+Prerequisites:
+  pyTelegramBotAPI:
+  pip install pyTelegramBotAPI
+  pycoingecko:
+  pip install pycoingecko
+
+Code for:
 telgram bot that tells the current value of different cryptocurrencies<br>
 <br>
 /start for help<br>
